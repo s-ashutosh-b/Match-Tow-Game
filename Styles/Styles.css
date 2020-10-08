@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+header {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: black;
+  width: 100%;
+  padding: 0 10%;
+  color: white;
+  font-size: 1.25rem;
+}
+
+main {
+  height: 80vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #5f5f5f;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main div.game-area {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px;
+}
+
+main div.game-area div.row {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px;
+}
+
+main div.game-area div.row div.col {
+  position: relative;
+  display: inline-block;
+  height: 63px;
+  width: 63px;
+  margin: 0px;
+}
+
+main div.game-area div.row div.col div.Tile {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 0 0 15px white inset;
+          box-shadow: 0 0 15px white inset;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+main div.game-area div.row div.col div.Tile:hover {
+  -webkit-box-shadow: 0 0 15px lightgreen, 0 0 15px white inset;
+          box-shadow: 0 0 15px lightgreen, 0 0 15px white inset;
+  cursor: pointer;
+}
+
+main div.game-area div.row div.col div.Tile div.frontFace {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: url("../Images/flower.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+
+main div.game-area div.row div.col div.Tile div.backFace {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+footer {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: black;
+  width: 100%;
+  padding: 0 10%;
+  color: white;
+  font-size: 1.25rem;
+}
+
+footer span.Alert {
+  font-size: 1rem;
+}
